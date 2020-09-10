@@ -1,5 +1,5 @@
 {% set name = "django-axes" %}
-{% set version = "5.5.0" %}
+{% set version = "5.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c8f1234003536e8eadc624745a2d302f9251943845a8df770c73e2bdb8782632
+  sha256: 269527b3ecf683ceb4db26c2e8aea0a42fddaf9518440c9b35e6919e29c4872c
 
 build:
   number: 0
