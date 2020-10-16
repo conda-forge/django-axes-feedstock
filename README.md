@@ -5,11 +5,9 @@ Home: https://pypi.org/project/django-axes/
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-axes-feedstock/blob/master/LICENSE.txt)
 
 Summary: django-axes, User lockout in django apps.
-
-
 
 Current build status
 ====================
