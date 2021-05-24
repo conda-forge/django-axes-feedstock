@@ -24,8 +24,7 @@ requirements:
   run:
     - setuptools
     - python >=3.6
-    - django >=2.0
-    - django-appconf >=1.0.3
+    - django >=2.2
     - django-ipware >=3,<4
 
 test:
