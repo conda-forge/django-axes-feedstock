@@ -18,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - setuptools_scm
   run:
     - setuptools
-    - python >=3.6
-    - django >=2.2
-    - django-ipware >=3,<4
+    - python >=3.8
+    - django >=3.2
+    - django-ipware >=3
 
 test:
   imports:
