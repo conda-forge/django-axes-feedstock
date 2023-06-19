@@ -1,5 +1,5 @@
 {% set name = "django-axes" %}
-{% set version = "5.41.1" %}
+{% set version = "6.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa43fe3a5763bea28d320b1d98e481c12e2dbc12f4dd851aaf7308e80629df9f
+  sha256: 000a2df2de8eb4da4602a86422aa75d8ad8d4d1e0968ac2bc855f9f43d5d4f01
 
 build:
   number: 0
@@ -18,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
     - setuptools
     - setuptools_scm
   run:
     - setuptools
-    - python >=3.6
-    - django >=2.2
-    - django-ipware >=3,<4
+    - python >=3.8
+    - django >=3.2
+    - django-ipware >=3
 
 test:
   imports:
