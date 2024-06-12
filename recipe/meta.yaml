@@ -1,5 +1,5 @@
 {% set name = "django-axes" %}
-{% set version = "6.4.0" %}
+{% set version = "6.5.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aff0e853ae9cddbdd9e8dc703b46915a9960012dab602552f61b43c0777bc731
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ee6b11b1331bb69a8fb90da9ecfac790ac95f5277ee04f16f55b4a5eb1593691
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
   run:
     - setuptools
     - python >=3.8
+    - asgiref >=3.6.0
     - django >=3.2
     - django-ipware >=3
 
