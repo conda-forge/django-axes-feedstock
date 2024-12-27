@@ -11,24 +11,26 @@ source:
   sha256: 16121bbb7bacf1ed83f23a4800ac168707ffce014407df1049aa4f2ea28d3d52
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm
   run:
     - setuptools
-    - python >=3.8
+    - python >={{ python_min }}
     - asgiref >=3.6.0
     - django >=3.2
     - django-ipware >=3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - axes
 
